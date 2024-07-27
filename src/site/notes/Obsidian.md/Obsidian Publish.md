@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/obsidian-md/obsidian-publish/","tags":["en"],"created":"2024-07-27T10:06:29.092+02:00","updated":"2024-07-27T10:06:40.343+02:00"}
+{"dg-publish":true,"permalink":"/obsidian-md/obsidian-publish/","tags":["en"],"created":"2024-07-27T11:29:02.501+02:00","updated":"2024-07-27T11:42:50.555+02:00"}
 ---
 
 

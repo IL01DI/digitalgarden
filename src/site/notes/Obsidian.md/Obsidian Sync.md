@@ -1,9 +1,27 @@
 ---
-{"dg-publish":true,"permalink":"/obsidian-md/obsidian-sync/","tags":["en"],"created":"2024-07-27T10:07:43.363+02:00","updated":"2024-07-27T10:31:53.204+02:00"}
+{"dg-publish":true,"permalink":"/obsidian-md/obsidian-sync/","tags":["en"],"created":"2024-07-27T12:57:23.735+02:00","updated":"2024-07-27T15:14:33.867+02:00"}
 ---
 
 
+> [!warning]
+> Do not run more than one syncing tool at the same time. Remember to always back up first before trying out.
+
+# Overview
+
+|                               Plugin Name                                | Rating | E2EE |            Version history            | Cross-platform | Number of synced platforms  | Offline First | Vault settings | Selective sync |
+|:------------------------------------------------------------------------:|:------:|:----:|:-------------------------------------:| -------------- | --------------------------- | ------------- | -------------- | -------------- |
+|      [Remotely Save](obsidian://show-plugin?id=remotely-save) [^1]       |  3/5   |  ✅  | Not implemented, but cloud integrated | ✅             | ♾️                          | ✅            | ✅             | ❌             |
+|   [Self-Hosted Live Sync](obsidian://show-plugin?id=obsidian-livesync)   |  3/5   |  ✅  |            Not implemented            | ✅             | ♾️                          | ✅            | ✅             | ❌             |
+|        [Obsidian Git](obsidian://show-plugin?id=obsidian-git) ⭐         | 3.5/5  |  ❌  | Not implemented, but cloud integrated | ✅             | ♾️                          | ✅            | ✅             | `.gitignore`   |
+|                   Obsidian Google Drive Auto Sync [^2]                   | 2.5/5  |  ❌  | Not implemented, but cloud integrated | ✅             | ♾️                          | ✅            | ❌             | ✅             |
+|                [Fit](obsidian://show-plugin?id=fit) [^3]                 | 2.5/5  |  ❌  | Not implemented, but cloud integrated | ✅             | ♾️                          | ✅            | ❌             | `.gitignore`   |
+| [Fleeting Notes Sync](obsidian://show-plugin?id=fleeting-notes-obsidian) |  2/5   |  ✅  |                  ❌                   | ✅             | 1 in Fleeting Notes; but ♾️ | ✅            | ❌             | ✅             |
+
+[^1]: Freemium: limited features may affect your usage.
+[^2]: Slow sync, may lose data, and cannot sync over 1000 files.
+[^3]: Not very good at auto merge conflict. Every run by an interval sync notifies you of an error, although it works.
 # Obsidian Git
+
 > [!check] Tested Platforms
 > - Windows 11
 > - Linux Fedora 40
@@ -14,7 +32,7 @@
 > - macOS 
 
 > [!attention] Requisites
-> Services you need to register:
+> Services you need to have registered:
 > - [GitHub](https://github.com)
 >
 > On Windows, make sure to have installed:
@@ -81,10 +99,13 @@ If you don't have any vaults, you need one. To do so:
 4. Then, use Command Palette and search `Clone a remote repository`.
 5. Enter the URL of your repo. The format must be the same as the following example: `https:github.com/username/repo.git`
 6. Select your choice:
-  - If you don't have the `.obsidian` folder on Git, enter `NO`.
-  - If you do have the `.obsidian` folder on Git:
-    - And you want to also sync with the Desktop config, enter `YES`.
-    - Otherwise, enter `NO`.
+	  - If you don't have the `.obsidian` folder on Git, enter `NO`.
+	  - If you do have the `.obsidian` folder on Git:
+	    - And you want to also sync with the Desktop config, enter `YES`.
+	    - Otherwise, enter `NO`.
+7. After cloning files from the repo, close the app and reopen it.
+8. Redownload the plugin, as it is no longer available.
+9. Add author's commit and email commit.
 
 # Obsidian Google Drive Auto Sync Plugin
 
@@ -96,7 +117,7 @@ If you don't have any vaults, you need one. To do so:
 
 Warning: Max sync number is 1000 files.
 ## Installation
-To install the , follow these steps (if you have previously installed any unofficial plugin the steps are identical):
+To install the Obsidian Google Drive Auto Sync Plugin, follow these steps (if you have previously installed any unofficial plugin the steps are identical):
 1. On your PC, go to [Obsidian Google Drive Sync Plugin GitHub Repo](https://github.com/stravo1/obsidian-gdrive-sync?tab=readme-ov-file#obsidian-google-drive-sync-plugin) and download from the latest release the `obsidian-gdrive-sync.zip`.
 2. Unzip it, then you should have a folder named `obsidian-gdrive-sync` containing 3 files. If after unzipping you end up with 3 different files (main.js, styles.css, manifest.json), place them under a new folder called `obsidian-gdrive-sync`.
 3. Navigate to your vault's location.

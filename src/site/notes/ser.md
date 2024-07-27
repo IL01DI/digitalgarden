@@ -1,10 +1,7 @@
 ---
-tags:
-  - philosophia
-  - es
-share: true
-dg-publish: true
+{"dg-publish":true,"permalink":"/ser/","tags":["philosophia","es"],"created":"2024-07-27T11:33:59.857+02:00","updated":"2024-07-27T17:28:36.500+02:00"}
 ---
+
 ```yml
 Definición: Esencia
 ```
