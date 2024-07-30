@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/docs/obsidian-md/obsidian-publish/","tags":["en"],"created":"2024-07-29T18:24:15.234+02:00","updated":"2024-07-30T11:29:56.870+02:00"}
+{"dg-publish":true,"permalink":"/docs/obsidian-md/obsidian-publish/","tags":["en"],"created":"2024-07-29T18:24:15.234+02:00","updated":"2024-07-30T11:32:31.832+02:00"}
 ---
 
 
@@ -27,7 +27,7 @@ The initial setup takes a couple of minutes, but when you're done you'll have a 
 
 ### 1.1. Vercel
 
-1. Open [this repo](https://github.com/oleeskild/digitalgarden), and click the blue "Deploy to Vercel" button. 
+1. Open [this repo](https://github.com/oleeskild/digitalgarden), and click the blue “Deploy to Vercel” button. 
 2. This should open Vercel and create a copy of this repository in your GitHub account.
 3. Give it a fitting name like 'my-digital-garden'.
 4. Follow the steps in Vercel to publish your site to the internet.
@@ -82,9 +82,9 @@ Congratulations, you now have your own personal part of the internet in the form
 
 You can now start adding links as you usually would in Obsidian, with double square brackets, to the note that you just published.
 
-Remember to also publish the notes your are linking to as this will not happen automatically. This is by design. You are always in control of what notes you actually want to publish. If you did not publish a linked note, the link will simply lead to a site telling the user that this note does not exist.
+Remember to also publish the notes you are linking to as this will not happen automatically. This is by design. You are always in control of what notes you actually want to publish. If you did not publish a linked note, the link will simply lead to a site telling the user that this note does not exist.
 
-If you want to unpublish a note, without deleting the note from your vault, simply uncheck or remove the dg-publish property in the note, open the [publication center](https://dg-docs.ole.dev/getting-started/02-commands/#open-publication-center) and click the "Delete notes from garden" button.
+If you want to unpublish a note, without deleting the note from your vault, simply uncheck or remove the dg-publish property in the note, open the [publication centre](https://dg-docs.ole.dev/getting-started/02-commands/#open-publication-center) and click the “Delete notes from garden” button.
 
 # Quartz
 > [!warning] Requirements
@@ -161,11 +161,11 @@ In future updates, you can simply run `npx quartz sync` every time you want to
 > - `-v` or `--verbose`: print out extra logging information
 > - `--commit` or `--no-commit`: whether to make a `git` commit for your changes
 > - `--push` or `--no-push`: whether to push updates to your GitHub fork of Quartz
-> - `--pull` or `--no-pull`: whether to try and pull in any updates from your GitHub fork (i.e. from other devices) before pushing
+> - `--pull` or `--no-pull`: whether to try to pull in any updates from your GitHub fork (i.e. from other devices) before pushing
 
 ## 4. Enveloppe Settings
 
-The root folder must be set as `content` in "File paths".
+The root folder must be set as `content` in “File paths”.
 
 ## 5. Hosting
 Quartz effectively turns your Markdown files and other resources into a bundle of HTML, JS, and CSS files (a website!).
@@ -184,9 +184,9 @@ However, if you’d like to publish your site to the world, you need a way to ho
 
 In your local Quartz, create a new file `quartz/.github/workflows/deploy.yml`.
 
-quartz/.github/workflows/deploy.yml
-
 ```yml
+# quartz/.github/workflows/deploy.yml
+
 name: Deploy Quartz site to GitHub Pages
  
 on:
@@ -264,11 +264,11 @@ Here’s how to add a custom domain to your GitHub pages deployment.
 
 ![Pasted image 20240730103144.png|The above shows a screenshot of Google Domains configured for both `jzhao.xyz` (an apex domain) and `quartz.jzhao.xyz` (a subdomain).](/img/user/assets/Pasted%20image%2020240730103144.png)
 
-See the [GitHub documentation](https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site/managing-a-custom-domain-for-your-github-pages-site#configuring-a-subdomain) for more detail about how to setup your own custom domain with GitHub Pages.
+See the [GitHub documentation](https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site/managing-a-custom-domain-for-your-github-pages-site#configuring-a-subdomain) for more detail about how to set up your own custom domain with GitHub Pages.
 
 > [!warning] Why aren't my changes showing up?
 > 
-> There could be many different reasons why your changes aren’t showing up but the most likely reason is that you forgot to push your changes to GitHub.
+> There could be many reasons why your changes aren’t showing up, but the most likely reason is that you forgot to push your changes to GitHub.
 > 
 > Make sure you save your changes to Git and sync it to GitHub by doing `npx quartz sync`. This will also make sure to pull any updates you may have made from other devices so you have them locally.
 
@@ -324,7 +324,7 @@ pages:
       - public
 ```
 
-When `.gitlab-ci.yaml` is committed, GitLab will build and deploy the website as a GitLab Page. You can find the url under `Deploy > Pages` in the sidebar.
+When `.gitlab-ci.yaml` is committed, GitLab will build and deploy the website as a GitLab Page. You can find the URL under `Deploy > Pages` in the sidebar.
 
 By default, the page is private and only visible when logged in to a GitLab account with access to the repository but can be opened in the settings under `Deploy` → `Pages`.
 
@@ -385,7 +385,7 @@ Before deploying to Vercel, a `vercel.json` file is required at the root of th
 > If there is something already hosted on the domain, these steps will not work without replacing the previous content. As a workaround, you could use Next.js rewrites or use the next section to create a subdomain.
 
 1. Update the `baseUrl` in `quartz.config.js` if necessary.
-2. Go to the [Domains - Dashboard](https://vercel.com/dashboard/domains) page in Vercel.
+2. Go to the [Domains  — Dashboard](https://vercel.com/dashboard/domains) page in Vercel.
 3. Connect the domain to Vercel
 4. Press “Add” to connect a custom domain to Vercel.
 5. Select your Quartz repository and press Continue.
