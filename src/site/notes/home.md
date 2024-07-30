@@ -1,9 +1,13 @@
 ---
-{"dg-publish":true,"permalink":"/home/","tags":["gardenEntry"],"created":"2024-07-26T13:11:57.057+02:00","updated":"2024-07-28T13:10:51.943+02:00"}
+{"dg-publish":true,"permalink":"/home/","tags":["gardenEntry"],"created":"2024-07-29T07:49:18.919+02:00","updated":"2024-07-28T20:24:12.906+02:00"}
 ---
 
 
-Welcome!
+Welcome to my Digital Garden! For the best experience, I recommend you to download [my vault](https://github.com/IL01DI/dg) and check it out using [Obsidian](https://obsidian.md).
+
+# Organization
+
+
 
 I tag:
 - Languages[^1]:
@@ -31,5 +35,7 @@ I tag:
 	- alchemia
 	- grammatike
 	- technologia
+	- linguistike
+	- mythologia
 
 [^1]: I'm multilingual, btw.
