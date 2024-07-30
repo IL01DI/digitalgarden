@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/docs/obsidian-md/obsidian-publish/","tags":["en"],"created":"2024-07-29T18:24:15.234+02:00","updated":"2024-07-30T11:08:45.727+02:00"}
+{"dg-publish":true,"permalink":"/docs/obsidian-md/obsidian-publish/","tags":["en"],"created":"2024-07-29T18:24:15.234+02:00","updated":"2024-07-30T11:29:56.870+02:00"}
 ---
 
 
@@ -31,9 +31,6 @@ The initial setup takes a couple of minutes, but when you're done you'll have a 
 2. This should open Vercel and create a copy of this repository in your GitHub account.
 3. Give it a fitting name like 'my-digital-garden'.
 4. Follow the steps in Vercel to publish your site to the internet.
-5. Next you need to [create a PAT](https://github.com/settings/tokens/new?scopes=repo) to your GitHub Account.
-6. The correct settings should already be applied. [^1]
-7. Click the “Generate token” button, and copy the token you are presented with on the next page.
 ### 1.2. Netlify
 
 1. Open [this repo](https://github.com/oleeskild/digitalgarden) and either clone it or fork it.
@@ -247,7 +244,6 @@ Then:
 > You can do this by going to your Settings page on your GitHub fork and going to the Environments tab and pressing the trash icon. The GitHub action will recreate the environment for you correctly the next time you sync your Quartz.
 
 > [!Info]
-> 
 > Quartz generates files in the format of `file.html` instead of `file/index.html` which means the trailing slashes for _non-folder paths_ are dropped. As GitHub pages does not do this redirect, this may cause existing links to your site that use trailing slashes to break. If not breaking existing links is important to you (e.g. you are migrating from Quartz 3), consider using Cloudflare Pages.
 
 
@@ -349,7 +345,7 @@ Press “Save and deploy” and Cloudflare should have a deployed version of you
 
 To add a custom domain, check out [Cloudflare’s documentation](https://developers.cloudflare.com/pages/platform/custom-domains/).
 
-> Warning
+> [!Warning]
 > 
 > Cloudflare Pages performs a shallow clone by default, so if you rely on `git` for timestamps, it is recommended that you add `git fetch --unshallow &&` to the beginning of the build command (e.g., `git fetch --unshallow && npx quartz build`).
 
