@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/docs/obsidian-md/obsidian-publish/","tags":["en"],"created":"2024-07-29T18:24:15.234+02:00","updated":"2024-07-30T11:32:31.832+02:00"}
+{"dg-publish":true,"permalink":"/docs/obsidian-md/obsidian-publish/","tags":["en"],"created":"2024-07-29T18:24:15.234+02:00","updated":"2024-07-30T11:35:50.336+02:00"}
 ---
 
 
@@ -41,7 +41,7 @@ The initial setup takes a couple of minutes, but when you're done you'll have a 
 ## 2. GitHub Token Generation
 
 > [!tip] A more secure option  
-> GitHub has launched a new feature called "Fined-Grained Access Token", where you can target what repositories the token has access to. This is currently the most secure way to use the plugin.
+> GitHub has launched a new feature called “Fined-Grained Access Token”, where you can target what repositories the token has access to. This is currently the most secure way to use the plugin.
 
 ### 2.1. PAT
 1. Next you need to [create a PAT](https://github.com/settings/tokens/new?scopes=repo) to your GitHub Account.
@@ -84,7 +84,7 @@ You can now start adding links as you usually would in Obsidian, with double squ
 
 Remember to also publish the notes you are linking to as this will not happen automatically. This is by design. You are always in control of what notes you actually want to publish. If you did not publish a linked note, the link will simply lead to a site telling the user that this note does not exist.
 
-If you want to unpublish a note, without deleting the note from your vault, simply uncheck or remove the dg-publish property in the note, open the [publication centre](https://dg-docs.ole.dev/getting-started/02-commands/#open-publication-center) and click the “Delete notes from garden” button.
+If you want to unpublish a note, without deleting the note from your vault, simply uncheck or remove the `dg-publish` property in the note, open the [publication centre](https://dg-docs.ole.dev/getting-started/02-commands/#open-publication-center) and click the “Delete notes from garden” button.
 
 # Quartz
 > [!warning] Requirements
@@ -105,6 +105,7 @@ npx quartz create
 ```
 
 > [!tip]-
+> 
 > If you prefer not to install Node in your device, you can skip the steps above and fork it at GitHub. The fork version handles every update from the main directly.
 
 This will guide you through initializing your Quartz with content.
@@ -155,13 +156,13 @@ In future updates, you can simply run `npx quartz sync` every time you want to
 > 
 > For full help options, you can run `npx quartz sync --help`.
 > 
-> Most of these have sensible defaults but you can override them if you have a custom setup:
+> Most of these have sensible defaults, but you can override them if you have a custom setup:
 > 
 > - `-d` or `--directory`: the content folder. This is normally just `content`
 > - `-v` or `--verbose`: print out extra logging information
 > - `--commit` or `--no-commit`: whether to make a `git` commit for your changes
 > - `--push` or `--no-push`: whether to push updates to your GitHub fork of Quartz
-> - `--pull` or `--no-pull`: whether to try to pull in any updates from your GitHub fork (i.e. from other devices) before pushing
+> - `--pull` or `--no-pull`: whether to try to pull in any updates from your GitHub fork (i.e. from other devices) before pushing.
 
 ## 4. Enveloppe Settings
 
@@ -174,7 +175,7 @@ However, if you’d like to publish your site to the world, you need a way to ho
 
 > [!Warning]
 > 
-> The rest of this guide assumes that you’ve already created your own GitHub repository for Quartz. If you haven’t already, [make sure you do so](https://quartz.jzhao.xyz/setting-up-your-GitHub-repository)
+> The rest of this guide assumes that you’ve already created your own GitHub repository for Quartz. If you haven’t already, [make sure you do so.](https://quartz.jzhao.xyz/setting-up-your-GitHub-repository)
 
 > [!Hint]
 > 
@@ -241,10 +242,10 @@ Then:
 > 
 > If you get an error about not being allowed to deploy to `github-pages` due to environment protection rules, make sure you remove any existing GitHub pages environments.
 > 
-> You can do this by going to your Settings page on your GitHub fork and going to the Environments tab and pressing the trash icon. The GitHub action will recreate the environment for you correctly the next time you sync your Quartz.
+> You can do this by going to your Settings page on your GitHub fork and going to the Environments tab and pressing the rubbish icon. The GitHub action will recreate the environment for you correctly the next time you sync your Quartz.
 
 > [!Info]
-> Quartz generates files in the format of `file.html` instead of `file/index.html` which means the trailing slashes for _non-folder paths_ are dropped. As GitHub pages does not do this redirect, this may cause existing links to your site that use trailing slashes to break. If not breaking existing links is important to you (e.g. you are migrating from Quartz 3), consider using Cloudflare Pages.
+> Quartz generates files in the format of `file.html` instead of `file/index.html` which means the trailing slashes for _non-folder paths_ are dropped. As GitHub pages don't do this redirect, this may cause existing links to your site that use trailing slashes to break. If not breaking existing links is important to you (e.g. you are migrating from Quartz 3), consider using Cloudflare Pages.
 
 
 #### Custom Domain[](https://quartz.jzhao.xyz/hosting#custom-domain)
@@ -415,7 +416,7 @@ Using `docs.example.com` is an example of a subdomain. They’re a simple way 
 
 Copy the `public` directory to your web server and configure it to serve the files. You can use any web server to host your site. Since Quartz generates links that do not include the `.html` extension, you need to let your web server know how to deal with it.
 
-#### Using Nginx[](https://quartz.jzhao.xyz/hosting#using-nginx)
+#### Using Nginx
 
 Here’s an example of how to do this with Nginx:
 
