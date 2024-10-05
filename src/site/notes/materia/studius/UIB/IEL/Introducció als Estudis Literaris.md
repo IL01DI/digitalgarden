@@ -1,12 +1,11 @@
 ---
-{"dg-publish":true,"permalink":"/materia/studius/uib/iel/introduccio-als-estudis-literaris/","created":"2024-10-01T17:41:06.000+02:00","updated":"2024-10-05T11:03:22.517+02:00"}
+{"dg-publish":true,"permalink":"/materia/studius/uib/iel/introduccio-als-estudis-literaris/","created":"2024-10-01T17:41:06.000+02:00","updated":"2024-10-05T11:53:05.470+02:00"}
 ---
 
 
-> [!abstract] Taula de continguts
+> [!abstract]- Taula de continguts
 > ```table-of-contents
 > ```
-> 
 
 # 1. Fet literari
 

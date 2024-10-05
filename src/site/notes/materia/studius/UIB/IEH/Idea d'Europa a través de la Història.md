@@ -1,11 +1,10 @@
 ---
-{"dg-publish":true,"permalink":"/materia/studius/uib/ieh/idea-d-europa-a-traves-de-la-historia/","created":"2024-10-04T16:46:49.009+02:00","updated":"2024-10-05T11:02:52.483+02:00"}
+{"dg-publish":true,"permalink":"/materia/studius/uib/ieh/idea-d-europa-a-traves-de-la-historia/","created":"2024-10-04T16:46:49.009+02:00","updated":"2024-10-05T11:31:01.039+02:00"}
 ---
 
 
 
-> [!abstract] Taula de continguts
-> 
+> [!abstract]- Taula de continguts
 > ```table-of-contents
 > ```
 
