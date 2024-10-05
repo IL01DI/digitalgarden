@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/materia/studius/uib/iel/introduccio-als-estudis-literaris/","created":"2024-10-01T17:41:06.000+02:00","updated":"2024-10-05T11:53:05.470+02:00"}
+{"dg-publish":true,"permalink":"/materia/studius/uib/iel/introduccio-als-estudis-literaris/","created":"2024-10-01T17:41:06.000+02:00","updated":"2024-10-05T12:02:02.448+02:00"}
 ---
 
 
@@ -80,7 +80,7 @@
 	- Es realitzen distincions del coneixement.
 	- Es fa una classificació del saber/coneixement humà.
 3. Aparició i consolidació de la categoria d’allò estètic.
-	- Kant valora que allò estètic és allò sensible (visible, tangible).
+	- Kant valora que allò estètic és independentment allò sensible (visible, tangible).
 	- L'element estètic es convertirà en element fonamental en la concepció del món moderna y el pensament occidental.
 4. Creació d'un públic lector ampli
 	1. Tecnologia
