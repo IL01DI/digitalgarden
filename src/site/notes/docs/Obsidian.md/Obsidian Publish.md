@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/docs/obsidian-md/obsidian-publish/","tags":["en"],"created":"2024-07-29T18:24:15.234+02:00","updated":"2024-07-30T11:35:50.336+02:00"}
+{"dg-publish":true,"permalink":"/docs/obsidian-md/obsidian-publish/","tags":["en"],"created":"2024-09-14T21:14:09.074+02:00","updated":"2024-09-09T16:49:03.000+02:00"}
 ---
 
 
@@ -53,7 +53,7 @@ The initial setup takes a couple of minutes, but when you're done you'll have a 
 1. It's a bit more hassle, but you can now create an access token that only have access to the digital garden repo. This is the recommended way to generate your token if you have more repos on your accounts.
 2. Remember to regenerate it after the expiration date, as it will no longer work after that date has passed.
 3. [Generate it](https://github.com/settings/personal-access-tokens/new), and apply settings as illustrated in the image below:
-![BfxGAQpDcz-700.webp](/img/user/assets/BfxGAQpDcz-700.webp)
+![BfxGAQpDcz-700.webp](/img/user/adjunctio/BfxGAQpDcz-700.webp)
 
 ## 3. Plugin Configuration
 1. Open Obsidian and the settings for “Digital Garden”.
@@ -67,7 +67,7 @@ The initial setup takes a couple of minutes, but when you're done you'll have a 
 	- A checkbox named `dg-home`[^3]
 3. Toggle both checkboxes so that they are in the `checked` state if you view as “Live Preview”, or set both as `true`.  
 It should look something like this:
-![5CAROmZpll-700.webp](/img/user/assets/5CAROmZpll-700.webp)
+![5CAROmZpll-700.webp](/img/user/adjunctio/5CAROmZpll-700.webp)
 
 [^2]: It tells the plugin that this should be your home page or entry into your digital garden. (It only needs to be added to _one_ note, not every note you'll publish).
 [^3]: It tells the plugin that this note should be published to your digital garden. Notes without this setting will not be published. (In other terms: Every note you publish will need this property.)
@@ -121,11 +121,11 @@ All the content in your Quartz should go in the `/content` folder. The content
 1. Create a new repository on GitHub.com, if you haven't.
 2. Do not initialize the new repository with README, licence, or `.gitignore` files.
 
-![Pasted image 20240730100705.png](/img/user/assets/Pasted%20image%2020240730100705.png)
+![Pasted image 20240730100705.png](/img/user/adjunctio/Pasted%20image%2020240730100705.png)
 
 3. At the top of your repository on GitHub.com’s Quick Setup page, click the clipboard to copy the remote repository URL.
 
-![Pasted image 20240730100738.png](/img/user/assets/Pasted%20image%2020240730100738.png)
+![Pasted image 20240730100738.png](/img/user/adjunctio/Pasted%20image%2020240730100738.png)
 
 4. In your terminal of choice, navigate to the root of your Quartz folder.
 5. Then, run the following commands, replacing `REMOTE-URL` with the URL you just copied from the previous step.
@@ -263,7 +263,7 @@ Here’s how to add a custom domain to your GitHub pages deployment.
         - `185.199.111.153`
     - If you are using a subdomain, navigate to your DNS provider and create a `CNAME` record that points your subdomain to the default domain for your site. For example, if you want to use the subdomain `quartz.example.com` for your user site, create a `CNAME` record that points `quartz.example.com` to `<github-username>.github.io`.
 
-![Pasted image 20240730103144.png|The above shows a screenshot of Google Domains configured for both `jzhao.xyz` (an apex domain) and `quartz.jzhao.xyz` (a subdomain).](/img/user/assets/Pasted%20image%2020240730103144.png)
+![Pasted image 20240730103144.png|The above shows a screenshot of Google Domains configured for both `jzhao.xyz` (an apex domain) and `quartz.jzhao.xyz` (a subdomain).](/img/user/adjunctio/Pasted%20image%2020240730103144.png)
 
 See the [GitHub documentation](https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site/managing-a-custom-domain-for-your-github-pages-site#configuring-a-subdomain) for more detail about how to set up your own custom domain with GitHub Pages.
 

@@ -1,8 +1,7 @@
 ---
-tags: en
-dg-publish: true
-published: true
+{"dg-publish":true,"permalink":"/docs/obsidian-md/obsidian-sync/","tags":["en"],"created":"2024-09-14T21:14:09.127+02:00","updated":"2024-09-09T16:49:04.000+02:00"}
 ---
+
 
 > [!warning]
 > Do not run more than one syncing tool at the same time. Remember to always back up first before trying out.
