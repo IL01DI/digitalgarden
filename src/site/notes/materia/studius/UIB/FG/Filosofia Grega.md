@@ -1,10 +1,9 @@
 ---
-{"dg-publish":true,"permalink":"/materia/studius/uib/fg/filosofia-grega/","created":"2024-10-01T17:41:10.000+02:00","updated":"2024-10-05T11:03:13.117+02:00"}
+{"dg-publish":true,"permalink":"/materia/studius/uib/fg/filosofia-grega/","created":"2024-10-01T17:41:10.000+02:00","updated":"2024-10-05T11:31:29.522+02:00"}
 ---
 
 
-> [!abstract] Taula de continguts
-> 
+> [!abstract]- Taula de continguts
 > ```table-of-contents
 > ```
 
